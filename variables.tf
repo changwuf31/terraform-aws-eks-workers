@@ -129,7 +129,7 @@ variable "associate_public_ip_address" {
 
 variable "enable_monitoring" {
   description = "Enable/disable detailed monitoring"
-  default     = true
+  default     = false
 }
 
 variable "ebs_optimized" {

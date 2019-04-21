@@ -132,7 +132,7 @@ data "aws_ami" "eks_worker" {
   }
 
   most_recent = true
-  owners      = ["602401143452"] # Amazon
+  owners      = ["self"] 
 }
 
 module "autoscale_group" {
