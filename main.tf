@@ -9,7 +9,7 @@ module "label" {
   name       = "${var.name}"
   delimiter  = "${var.delimiter}"
   attributes = ["${compact(concat(var.attributes, list("workers")))}"]
-  tags       = "${local.tags}"
+  tags       = "${var.tags}"
   enabled    = "${var.enabled}"
 }
 
