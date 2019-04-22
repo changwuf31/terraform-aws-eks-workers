@@ -160,6 +160,7 @@ module "autoscale_group" {
   credit_specification                    = ["${var.credit_specification}"]
   disable_api_termination                 = "${var.disable_api_termination}"
   ebs_optimized                           = "${var.ebs_optimized}"
+  root_ebs_size                           = "${var.root_ebs_size}"
   elastic_gpu_specifications              = ["${var.elastic_gpu_specifications}"]
   instance_initiated_shutdown_behavior    = "${var.instance_initiated_shutdown_behavior}"
   instance_market_options                 = ["${var.instance_market_options }"]

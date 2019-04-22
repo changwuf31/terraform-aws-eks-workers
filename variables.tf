@@ -390,3 +390,9 @@ variable "bootstrap_extra_args" {
   default     = ""
   description = "Passed to the bootstrap.sh script to enable --kublet-extra-args or --use-max-pods."
 }
+
+variable "root_ebs_size" {
+  type        = "string"
+  default     = "8"
+  description = "Root EBS Size"
+}
